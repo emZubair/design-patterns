@@ -91,3 +91,6 @@ Strategy
     defines a family of algorithms/behaviours, encapsulates them and uses them interchangeably, it also allows 
 algorithms vary independently from clients that use them
 ```
+
+**Strategy** is a behavioral design pattern that turns a set of behaviors into objects and makes them interchangeable 
+inside original context object.

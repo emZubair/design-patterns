@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 from decimal import Decimal
+import  inspect
 
 
 class Toy(ABC):
@@ -11,7 +12,7 @@ class Toy(ABC):
 
     @abstractmethod
     def get_cost(self):
-        raise NotImplementedError("get_cost method not implemented")
+        raise NotImplementedError(f"{inspect.stack()[0][3]} not implemented")
 
 
 class FeatureDecorator(Toy):
@@ -27,11 +28,11 @@ class FeatureDecorator(Toy):
 
     @abstractmethod
     def get_name(self):
-        NotImplementedError("get_name method not implemented")
+        raise NotImplementedError(f"{inspect.stack()[0][3]} not implemented")
 
     @abstractmethod
     def get_cost(self):
-        raise NotImplementedError("get_cost method not implemented")
+        raise NotImplementedError(f"{inspect.stack()[0][3]} not implemented")
 
 
 class Doll(Toy):

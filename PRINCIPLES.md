@@ -16,6 +16,7 @@ that vary without affecting those that don't.`
 3. `Favor composition over inheritance`
 4. `Stive for loosely coupled designs between the objects that interact.`
 5. `Classes should be open for extension but closed for modifications`
+6. `Dependency Inversion Pricinple, Depend upon abstactions or intefaces instead of concrete classes`
 
 
 #### Loose Coupling
